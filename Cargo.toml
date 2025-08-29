@@ -1,0 +1,26 @@
+[package]
+name = "boost_heap"
+description = "Boost C++ library boost_heap packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_heap"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_heap"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_assert = { version = "0.1.0", path = "../boost_assert" }
+boost_concept_check = { version = "0.1.0", path = "../boost_concept_check" }
+boost_config = { version = "0.1.0", path = "../boost_config" }
+boost_core = { version = "0.1.0", path = "../boost_core" }
+boost_intrusive = { version = "0.1.0", path = "../boost_intrusive" }
+boost_iterator = { version = "0.1.0", path = "../boost_iterator" }
+boost_parameter = { version = "0.1.0", path = "../boost_parameter" }
+boost_static_assert = { version = "0.1.0", path = "../boost_static_assert" }
+boost_throw_exception = { version = "0.1.0", path = "../boost_throw_exception" }
+boost_type_traits = { version = "0.1.0", path = "../boost_type_traits" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
